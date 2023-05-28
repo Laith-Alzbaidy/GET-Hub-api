@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cop.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>comp</title>
+  </head>
+
+  <body id="bod">
+    <audio id="myAudio">
+      <source src="../img/sound.mp3" type="audio/mpeg" />
+    </audio>
+    <header>
+      <nav>
+        <!-- <i id="nav-burger" class="fa-solid fa-bars"></i> -->
+        <!-- Logo -->
+        <div class="nav-left">
+          <a class="linkLogo" href="">
+            <a href="../index.html"
+              ><img class="logo" src="../img/Logo.png" alt=""
+            /></a>
+          </a>
+          <!-- search -->
+          <div class="cont-search">
+            <input
+              class="search"
+              id="search"
+              value="Search or jump to..."
+              type="search" />
+            <i id="icon-search" class="fas fa-search"></i>
+            <img class="slash" src="../img/slash.png" />
+          </div>
+
+          <!-- link -->
+          <div class="cont-link">
+            <a href="">Pull requests</a>
+            <a href="">Issues</a>
+            <a href="">Codespaces</a>
+            <a href="">Marketplace</a>
+            <a href="">Explore</a>
+            <a href="cop.html">comparison</a>
+          </div>
+        </div>
+
+        <!-- nav right -->
+        <div class="nav-right">
+          <!-- <i id="dark-mood"class="fa-solid fa-moon" ></i> -->
+          <!-- bell -->
+          <i class="fa-regular fa-bell"></i>
+
+          <!-- dropdown add -->
+          <div class="dropdown">
+            <div class="iconadd">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div id="dropdown-content" class="dropdown-content"></div>
+          </div>
+
+          <!-- img profile -->
+          <div class="img-profile">
+            <span></span>
+            <img
+              id="img-nav"
+              class="img-prof"
+              src="../img/profile.png"
+              alt="" />
+            <i class="fa-solid fa-caret-down scircl"></i>
+          </div>
+        </div>
+        <!--  dropdown profile-->
+      </nav>
+    </header>
+
+    <div id="header">
+      <div class="first">
+        <i id="nav-burger" class="fa-solid fa-bars"></i>
+        <a href="../index.html"
+          ><img class="logo" src="../img/Logo.png" alt=""
+        /></a>
+        <i class="fa-regular fa-bell"></i>
+      </div>
+
+      <div class="showdrop">
+        <div class="cont-search cont-search-input">
+          <input
+            class="search searchBurger"
+            id="search"
+            value="Search or jump to..."
+            type="search" />
+          <i id="icon-search" class="fas fa-search"></i>
+          <img class="slash" src="../img/slash.png" />
+        </div>
+        <div class="link-burger">
+          <a href="">Pull requests</a>
+          <a href="">Issues</a>
+          <a href="">Codespaces</a>
+          <a href="">Marketplace</a>
+          <a href="">Explore</a>
+        </div>
+        <div class="nav-right drop">
+          <i id="dark-mood" class="fa-solid fa-moon"></i>
+
+          <!-- dropdown add -->
+          <div class="dropdown">
+            <div class="iconadd drop">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div id="dropdown-content" class="dropdown-content"></div>
+          </div>
+
+          <!-- img profile -->
+          <div class="img-profile drop">
+            <span></span>
+            <img class="img-prof" src="../img/profile.png" alt="" />
+            <i class="fa-solid fa-caret-down scircl"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="fireworksDiv"></div>
+      <div class="col-left">
+        <img id="imgFirst" class="img-com" src="../img/profile.png" alt="" />
+        <h3>name :<span id="nameFirst"></span></h3>
+        <h3>
+          followers :<span id="followers-First" class="followers span"></span>
+        </h3>
+        <h3>repos :<span class="repos span"></span></h3>
+      </div>
+      <div class="cont-vs">
+        <span class="span-VS-right"></span>
+        <img id="VS" src="../img/VS.png" alt="" />
+        <span class="span-VS-left"></span>
+        <img id="win" src="../img/win.png" alt="" />
+        <img id="rotate-win" src="../img/arow.png" alt="" />
+      </div>
+      <div class="col-right">
+        <img id="imgSecond" class="img-com" src="../img/profile.png" alt="" />
+        <h3>name :<span id="nameSecond"></span></h3>
+        <h3>
+          followers :<span id="followers-Second" class="followers span"></span>
+        </h3>
+        <h3>repos :<span class="repos span"></span></h3>
+      </div>
+    </section>
+
+    <div class="btn-in">
+      <input class="in" id="firstuser" type="search" placeholder="First user" />
+      <button id="btn-compartion"><span>compartion</span></button>
+      <input
+        class="in"
+        id="seconduser"
+        type="search"
+        placeholder="Second user" />
+    </div>
+
+    <button id="clearbtn">Clear</button>
+
+    <footer>
+      <div class="lastFooter">
+        <img id="logo-footer" src="../img/Logo.png" alt="" />
+        <span> © 2023 GitHub, Inc. </span>
+      </div>
+      <div class="link-footer">
+        <a href="">Terms</a>
+        <a href="">Privacy </a>
+        <a href="">Security </a>
+        <a href="">Status</a>
+        <a href="">Docs</a>
+        <a href="">Contact GitHub </a>
+        <a href="">Pricing</a>
+        <a href="">API</a>
+        <a href="">Training</a>
+        <a href="">Blog</a>
+        <a href="">About</a>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@latest/dist/fireworks.js"></script>
+    <script src="../file css - js/cop.js"></script>
+  </body>
+</html>
