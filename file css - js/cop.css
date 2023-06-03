@@ -342,6 +342,7 @@ section {
   padding: 20px;
   box-shadow: inset 0px 0px 10px 0px white;
   border-radius: 25px;
+  position: relative;
 }
 #VS {
   width: 340px;
@@ -725,6 +726,18 @@ section {
 }
 .fireworksDiv {
   position: absolute;
+  left: 0px;
+  width: 100%;
+  top: 0px;
+  height: 100%;
+}
+
+.fireworksDiv2 {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  top: 0px;
+  height: 100%;
 }
 
 #clearbtn {

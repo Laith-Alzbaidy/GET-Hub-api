@@ -13,11 +13,18 @@ clear.addEventListener('click', function () {
 })
 // Play the audio and bom win
 const fireDiv = document.querySelector('.fireworksDiv')
+const fireDiv2 = document.querySelector('.fireworksDiv2')
 const fireworks = new Fireworks(fireDiv, {
-  // delay: {min: 10, max: 15},
-  // trace: 5,
-  // speed: 0.5,
-  // particles: 50,
+  delay: {min: 10, max: 15},
+  trace: 5,
+  speed: 0.5,
+  particles: 50,
+})
+const fireworks2 = new Fireworks(fireDiv2, {
+  delay: {min: 10, max: 15},
+  trace: 5,
+  speed: 0.5,
+  particles: 50,
 })
 
 //user second
@@ -40,11 +47,13 @@ navburger.addEventListener('click', function () {
 })
 
 //span vs
-let spanleft = document.querySelector('.span-VS-left')
-let spanright = document.querySelector('.span-VS-right')
-console.log(spanleft)
-console.log(spanright)
+// let spanleft = document.querySelector('.span-VS-left')
+// let spanright = document.querySelector('.span-VS-right')
+// console.log(spanleft)
+// console.log(spanright)
 
+let namewin = document.getElementById('name-win')
+console.log(namewin)
 let rotatewin = document.getElementById('rotate-win')
 
 function wintime() {
@@ -53,10 +62,16 @@ function wintime() {
     fireworks.start()
   }, 1300)
 }
+function wintime2() {
+  setTimeout(() => {
+    audio.play()
+    fireworks2.start()
+  }, 1300)
+}
 
 function rotaeRight() {
   rotatewin.style = 'rotate : 90deg'
-  wintime()
+  wintime2()
 }
 function rotaeLeft() {
   rotatewin.style = 'rotate : -90deg'
@@ -80,7 +95,6 @@ btn.addEventListener('click', function () {
         followersfirst.textContent = res.followers
         nameFirst.textContent = res.name
         reboFuser.textContent = res.public_repos
-        spanleft.innerHTML = res.name
 
         //   names.innerHTML = res.name
         let a = 'ahmad'
@@ -93,17 +107,19 @@ btn.addEventListener('click', function () {
             followersSecond.textContent = res.followers
             nameSecond.textContent = res.name
             reboSuser.textContent = res.public_repos
-            spanright.innerHTML = res.name
             console.log(typeof parseInt(reboSuser.textContent))
             if (
               parseInt(reboFuser.textContent) > parseInt(reboSuser.textContent)
             ) {
               console.log(' first is  is win')
               rotaeLeft()
+              namewin.innerHTML = res.name
             } else if (
               parseInt(reboFuser.textContent) < parseInt(reboSuser.textContent)
             ) {
               rotaeRight()
+              namewin.innerHTML = res.name
+
               console.log('second  is win ')
             } else {
               console.log('compair')
@@ -112,11 +128,15 @@ btn.addEventListener('click', function () {
                 parseInt(followersSecond.textContent)
               ) {
                 rotaeLeft()
+                namewin.innerHTML = res.name
+
                 console.log('FIRS WIN WITH FOLLWERS')
               } else if (
                 parseInt(followersfirst.textContent) <
                 parseInt(followersSecond.textContent)
               ) {
+                namewin.innerHTML = res.name
+
                 rotaeRight()
                 console.log('second WIN WITH FOLLWERS')
               } else {

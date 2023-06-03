@@ -335,6 +335,7 @@ svg {
   justify-content: center;
   gap: 4px;
 }
+
 #reponumber {
   color: rgb(0 0 0) !important;
   display: flex;
@@ -519,6 +520,7 @@ footer::before {
 }
 .first-row {
   display: flex;
+  gap: 10px;
 }
 
 /* #nav-burger {

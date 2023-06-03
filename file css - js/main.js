@@ -47,6 +47,13 @@ if (localStorage.getItem('MOOD') == 'enaple') {
   dis()
 }
 
+// console.log($('.icon-text').children()[1])
+// // function handlerIn(event) {
+// //   $(event.target).children()[1].css('color', 'white')
+// // }
+// // function handlerout(event) {
+// //   $(event.target).children()[1].css('color', 'black')
+// // }
 //lite mood
 function enapleMOOD() {
   localStorage.setItem('MOOD', 'enaple')
@@ -55,6 +62,7 @@ function enapleMOOD() {
   moon.style = 'rotate : 180deg ; color :orange ; width:20px ;  transition: 1s;'
   $('.arow').css('color', 'black')
   $('span').css('color', 'black')
+  // $('.icon-text').on('mouseenter', handlerIn).on('mouseleave', handlerout)
 }
 
 //dark mood
@@ -73,7 +81,6 @@ function dis() {
 //vs name
 
 // viarble
-
 let imgusers = document.getElementById('img-users')
 let followers = document.getElementById('followers')
 let following = document.getElementById('following')
