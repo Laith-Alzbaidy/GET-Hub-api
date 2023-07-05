@@ -436,7 +436,8 @@ svg {
 footer {
   gap: 40px 0;
   margin-top: 69px;
-  padding: 0 0 20px 0;
+ 
+    padding: 0px 0 33px 0;
   display: grid;
   grid-template-columns: 12 1fr;
   width: 100%;
