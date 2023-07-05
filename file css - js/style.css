@@ -337,17 +337,15 @@ svg {
 }
 
 #reponumber {
-     color: rgb(0 0 0) !important;
+    color: rgb(0 0 0) !important;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(162 159 159);
+    background: rgb(87, 87, 87);
     /* padding: 2px; */
     border-radius: 50%;
-    /* width: 20px; */
-    /* height: 18px; */
-    /* font-size: 10px; */
-    padding: 3px 1px;
+    /* width: 14px; */
+    padding: 3px 7px;
 }
 
 #btn-profile {
